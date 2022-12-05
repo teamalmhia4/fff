@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حجز موعد</title>
+
+<link rel="icon" sizes="16x16" href="assets/img/favicon-icon.html">
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="assets/css/flaticon.css">
+
+<link rel="stylesheet" href="assets/css/ionicons.min.css">
+
+<link rel="stylesheet" href="assets/css/owl.carousel.css">
+
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+<link rel="stylesheet" href="assets/css/swiper.min.css">
+
+<link rel="stylesheet" href="assets/css/datepicker.css">
+
+<link rel="stylesheet" href="assets/css/animate.css">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="assets/css/rtl.css">
+
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<div class="site-preloader-wrap">
+<div class="cssload-loader"></div>
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light auto-dark-navbar auto-navbar header-sticky">
+<div class="container">
+<a class="navbar-brand" href="index-2.html">
+<img src="assets/img/logo.png" alt="Logo">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle التنقل">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item dropdown">
+<a class="nav-link" href="index-2.html">الصفحة الرئيسية</a>
+<li class="nav-item">
+<a class="nav-link" href="about-us-dark.html">معلومات عنا</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="appointment-dark.html">حجز موعد</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="services.html">خدماتنا</a>
+<li class="nav-item">
+<a class="nav-link" href="contact-us.html">اتصل بنا</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#searchmodal" data-toggle="modal" data-target="#searchmodal"><i class="fa fa-search"></i></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+
+<div class="modal fade fade-scale searchmodal" id="searchmodal">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-body">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<form class="search-form">
+<input type="text" class="form-control" id="search" placeholder="بحث في...">
+<button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="breadcumbs-banner-area breadcumbs-banner-bg jarallax">
+<div class="d-table">
+<div class="d-table-cell">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center">
+<h2>حجز موعد</h2>
+<span><a href="index-2.html">الصفحة الرئيسية</a> / حجز موعد</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="content-block-area">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="apointment-preview-boxed man-image-bg wow fadeInUp"></div>
+</div>
+<div class="col-lg-6">
+<div class="section-title text-center">
+<div class="row">
+<div class="col-lg-12 offset-lg-0 col-md-8 offset-md-2">
+<h2><span>طلب</span> موعد</h2>
+<div class="car-icon"><img src="assets/img/cars.png" alt="car"></div>
+<p>يمكنك حجز موعد لنقل سيارتك الآن عن طريق هذا النموذج.</p>
+</div>
+</div>
+</div>
+<form class="appointment-form" action="https://ff.sthah.com/index.html">
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<label>معلومات السيارة</label>
+<select id="Year">
+<option value="hide">-- السنة ، النموذجي --</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+</select>
+</div>
+<div class="col-lg-6 col-md-6">
+<label>اختر الخدمات</label>
+<select id="selectServices">
+<option value="hide">-- اختر الخدمات --</option>
+<option value="1">سطحة عادي</option>
+<option value="2">سطحة هيدروليك</option>
+<option value="3">سطجة ونش</option>
+<option value="4">فك القير المعشق</option>
+<option value="4">فتح ابواب السيارات</option>
+<option value="4">خدمة اخرى</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<label>تاريخ التعيين</label>
+<input type="text" id="datepicker" name="appointmentDate" placeholder="تاريخ التعيين" required>
+</div>
+<div class="col-md-6 col-md-6">
+<label>وقت الموعد والتاريخ</label>
+<select id="Time">
+<option value="hide">-- رأى من المناسب --</option>
+<option value="2010">09:00AM - 10:00AM</option>
+<option value="2011">10:00AM - 11:00AM</option>
+<option value="2012">11:00AM - 12:00PM</option>
+<option value="2013">12:00PM - 01:00PM</option>
+<option value="2014">01:00PM - 02:00PM</option>
+<option value="2015">02:00PM - 03:00PM</option>
+<option value="2015">03:00PM - 04:00PM</option>
+<option value="2015">04:00PM - 05:00PM</option>
+<option value="2015">05:00PM - 06:00PM</option>
+<option value="2015">06:00PM - 07:00PM</option>
+<option value="2015">07:00PM - 08:00PM</option>
+<option value="2015">08:00PM - 09:00PM</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<p> تفاصيل الاتصال</p>
+</div>
+<div class="col-lg-6 col-md-6">
+<input type="text" name="yourName" placeholder="اسمك" required>
+</div>
+<div class="col-lg-6 col-md-6">
+<input type="email" name="yourEmail" placeholder="بريدك الالكتروني" required>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<input type="text" name="yourPhone" placeholder="رقم تليفونك" required>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<textarea name="yourMessage" id="yourMessage" placeholder="رسالتك" required></textarea>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 text-center">
+<button class="btn theme-btn" type="submit">ارسل الان</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<footer class="site-footer">
+
+<div class="footer-top-area">
+<div class="container">
+<div class="row">
+<div class="col-lg-4">
+<div class="footer-top-info">
+<span class="footer-icons"><i class="fa fa-map-o"></i></span> <p>موقعنا شمال جدة</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="footer-top-info">
+<span class="footer-icons"><i class="flaticon-crane"></i></span> <p>يتوفر خدمة ونش او فل داون</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="footer-top-info">
+<span class="footer-icons"><i class="fa fa-headphones"></i></span> <p>اتصل بنا 0506026062</p>
+</div>
+</div>
+</div>
+<div class="hr-line"></div>
+<div class="row">
+<div class="col-lg-4 col-md-12">
+<div class="footer-wid">
+<a href="index-2.html" class="footer-logo"><img src="assets/img/logo.png" alt="logo"></a>
+<p>سطحه جده لنقل السيارات المتعطله والمصدومه داخل وخارج جده سطحه جده الرياض نقل جميع انواع السيارات داخل المملكه سطحه جده ابها سطحه جده ابها خميس مشيط سطحه جده الطائف سطحه جده مكه سطحه جده بحره سطحه جده الرحيلي سطحه جده سطحه جده رابغ سطحه جده ينبع سطحه جده ثول سطحه جده المدينه المنوره المركز الرئيسي لنقل السيارات داخل جده</p>
+<a href="#" class="link-color">اقرأ المزيد عنا <i class="fa  fa-long-arrow-right"></i></a>
+</div>
+</div>
+<div class="col-lg-8 col-md-12">
+<div class="row">
+<div class="col-lg-4 col-md-4">
+<div class="footer-wid footer-menu">
+<h3 class="footer-wid-title">التنقل</h3>
+<ul>
+<li><a href="index-2.html"><i class="fa  fa-angle-right"></i> الصفحة الرئيسية</a></li>
+<li><a href="about-us-dark.html"><i class="fa  fa-angle-right"></i> معلومات عنا</a></li>
+<li><a href="contact-us.html"><i class="fa  fa-angle-right"></i> اتصل بنا</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-4">
+<div class="footer-wid footer-menu">
+<h3 class="footer-wid-title">ساعات العمل</h3>
+<ul>
+<li><i class="fa  fa-angle-right"></i> يوم السبت: 24 ساعة</li>
+<li><i class="fa  fa-angle-right"></i> يوم الأحد: 24 ساعة</li>
+<li><i class="fa  fa-angle-right"></i> يوم الاثنين: 24 ساعة</li>
+<li><i class="fa  fa-angle-right"></i> يوم الثلاثاء: 24 ساعة</li>
+<li><i class="fa  fa-angle-right"></i> يوم الأربعاء: 24 ساعة</li>
+<li><i class="fa  fa-angle-right"></i> يوم الخميس: 24 ساعة</li>
+<li><i class="fa  fa-angle-right"></i> يوم الجمعة: 24 ساعة</li>
+</ul>
+</div>
+</div>
+  <div class="col-lg-4 col-md-4">
+<div class="footer-wid">
+<h3 class="footer-wid-title">ابقى على تواصل</h3>
+<p>يمكنك التواصل معنا عبر</p>
+<div class="address-info">
+<span><i class="fa  fa-phone"></i> 0506026062</span><br>
+<span><i class="fa  fa-envelope"></i> inof@farekfahd.com </span>
+</div>
+<div class="subscribe">
+<form action="https://ff.sthah.com/index.html">
+<input type="text" placeholder="اكتب بريدك الالكتروني" required>
+<button>إشترك الآن <i class="fa  fa-paper-plane"></i></button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 text-center">
+<div class="social-icos">
+<ul class="list-inline">
+<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div> 
+
+<div class="footer-copyright-area">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-sm-5">
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+                            </script> © جميع الحقوق محفوضة من النشر لموقع سطحة جدة 2023.
+</div>
+<div class="col-md-6 col-sm-7 text-right">
+<a href="https://sthah.com/f/">برعاية فريق المحياء</a> <span class="seprator">
+</div>
+</div>
+</div>
+</div> 
+</footer>
+
+
+<a href="#content" class="back-to-top">Top</a>
+
+
+<script src="assets/js/jquery.2.1.4.min.js"></script>
+
+<script src="assets/js/proper.min.js"></script>
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+<script src="assets/js/mixitup.min.js"></script>
+
+<script src="assets/js/swiper.jquery.min.js"></script>
+
+<script src="assets/js/datepicker.js"></script>
+
+<script src="assets/js/wow.min.js"></script>
+
+<script src="assets/js/isotope.pkgd.min.js"></script>
+
+<script src="assets/js/waypoints.min.js"></script>
+
+<script src="assets/js/jquery.counterup.min.js"></script>
+
+<script src="assets/js/jquery.ripples-min.js"></script>
+
+<script src="assets/js/jquery.mb.YTPlayer.min.html"></script>
+
+<script src="assets/js/jarallax.min.js"></script>
+
+<script src="assets/js/parsley.min.js"></script>
+
+<script src="assets/js/jquery.googlemap.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0jIY1DdGJ7yWZrPDmhCiupu_K2En_4HY"></script>
+
+<script src="assets/js/active.js"></script>
+</body>
+
+
+</html>
